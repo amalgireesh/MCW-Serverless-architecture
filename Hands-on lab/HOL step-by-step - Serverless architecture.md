@@ -283,7 +283,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
     
      ![](media/eventgrid1.png)
 
-    d. Click on **Next:Schema>**. Select the schema as **Event Grid Schema** and then click **Review + create**.
+    d. Click on **Next:Schema**. Select the schema as **Event Grid Schema** and then click **Review + create**.
 
      ![](media/eventgrid2.png)
 
