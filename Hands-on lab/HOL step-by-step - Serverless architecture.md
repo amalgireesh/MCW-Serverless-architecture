@@ -233,7 +233,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     b. **Resource Group**: Select **ServerlessArchitecture**.
 
-    c. **Name**: Unique value for the App name (ensure the green check mark appears). Provide a name similar to **TollBoothEvents**.
+    c. **Name**: Unique value for the App name (ensure the green check mark appears). Provide a name similar to **TollBoothEvents-DID**.
 
     d. **Publish**: Select **Code**.
 
@@ -275,7 +275,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
 4. On the **Create Topic** blade, specify the following configuration options:
 
-    a. **Name:** Unique value for the App name such as **TollboothEventGrid** (ensure the green check mark appears).
+    a. **Name:** Unique value for the App name such as **TollboothEventGrid-DID** (ensure the green check mark appears).
 
     b. Select the Resource Group **ServerlessArchitecture**.
 
@@ -315,7 +315,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     a. Specify the Resource Group **ServerlessArchitecture**.
 
-    b. For Account Name, type a unique value for the App name such as **tollboothdb** (ensure the green check mark appears).
+    b. For Account Name, type a unique value for the App name such as **tollboothdb-DID** (ensure the green check mark appears).
 
     c. Select the **Core (SQL)** API.
 
@@ -390,7 +390,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
 4. On the **Create Computer Vision API** blade, specify the following configuration options:
 
-    a. **Name**: Unique value for the App name such as **tollboothvisionINIT** (ensure the green check mark appears).
+    a. **Name**: Unique value for the App name such as **tollboothvision-DID** (ensure the green check mark appears).
 
     b. Ensure the **Location** selected is the same region as your Resource Group.
 
@@ -432,7 +432,7 @@ Azure Key Vault is used to securely store all secrets, such as database connecti
 
     b. **Resource group**: Select **ServerlessArchitecture**.
 
-    c. **Key vault name**: Unique value for the name such as **TollBoothVaultINIT** (ensure the green check mark appears).
+    c. **Key vault name**: Unique value for the name such as **TollBoothVault-DID** (ensure the green check mark appears).
 
     d. **Region**: Select the same region as your Resource Group.
 
