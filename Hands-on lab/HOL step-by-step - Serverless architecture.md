@@ -1141,7 +1141,7 @@ In this exercise, you create a new Logic App for your data export workflow. This
 
 4. On the **Create Logic App** blade, specify the following configuration options:
 
-    a. For Name, type a unique value for the App name similar to **TollBoothLogic** (ensure the green check mark appears).
+    a. For Name, type a unique value for the App name similar to **TollBoothLogic-DID** (ensure the green check mark appears).
 
     b. Specify the Resource Group **ServerlessArchitecture**.
 
