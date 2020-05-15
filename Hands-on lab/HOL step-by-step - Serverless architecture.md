@@ -145,7 +145,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     a. For **Resource group**, select the **Use existing** radio button, and select the **ServerlessArchitecture** resource group.
 
-    b. **Name**: enter a unique value for the storage account such as **tollboothstorage** (must be all lower case; ensure the green check mark appears).
+    b. **Name**: enter a unique value for the storage account such as **tollboothstorage-DID** (must be all lower case; ensure the green check mark appears).
 
     c. Ensure the **Location** selected is the same region as the resource group.
 
@@ -195,7 +195,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     b. **Resource Group**: Select **ServerlessArchitecture**.
 
-    c. **Name**: Unique value for the App name (ensure the green check mark appears). Provide a name similar to **TollBoothFunctionApp**
+    c. **Name**: Unique value for the App name (ensure the green check mark appears). Provide a name similar to **TollBoothFunctionApp-DID**
 
     d. **Publish**: Select **Code**.
 
