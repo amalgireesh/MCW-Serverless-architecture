@@ -139,7 +139,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     a. For **Resource group**, select the **Use existing** radio button, and select the **ServerlessArchitecture** resource group.
 
-    b. **Name**: enter a unique value for the storage account such as **tollboothstorage-DID** where DID is your unique ID present in your username. For example: Username - ```odl_user_181464@msazurelabs.onmicrosoft.com```, so here ```181464``` is the unique ID. 
+    b. **Name**: Enter a unique value for the storage account name, include **DeploymentID/DID** as suffix in storage account name to make it unique, such as **tollboothstorage-DID** where DID is unique ID present in your Azure username. For example: Username - <inject key="AzureAdUserEmail"></inject>, here six digit number is the **DeploymentID**. 
     
     **Note:** All characters of the Name must be in lower case; ensure the green check mark appears.
 
