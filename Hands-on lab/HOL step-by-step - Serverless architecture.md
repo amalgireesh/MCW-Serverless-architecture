@@ -203,7 +203,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     f. **Region**: Select the region you are using for this lab, or the closest available one.
 
-   ![](media/funcapp.png)
+   ![](media/funcapp0.png)
 
 5. Select **Next: Hosting >**.
 
