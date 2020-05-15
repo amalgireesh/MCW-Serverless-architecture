@@ -145,7 +145,9 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     a. For **Resource group**, select the **Use existing** radio button, and select the **ServerlessArchitecture** resource group.
 
-    b. **Name**: enter a unique value for the storage account such as **tollboothstorage-DID** (must be all lower case; ensure the green check mark appears).
+    b. **Name**: enter a unique value for the storage account such as **tollboothstorage-DID** where DID is your unique ID present in your username. For example: Username - odl_user_181464@msazurelabs.onmicrosoft.com, so here **181464** is the unique ID. 
+    
+    **Note:** All characters of the Name must be in lower case; ensure the green check mark appears.
 
     c. Ensure the **Location** selected is the same region as the resource group.
 
