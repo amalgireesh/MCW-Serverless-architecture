@@ -1188,6 +1188,9 @@ In this exercise, you create a new Logic App for your data export workflow. This
     ![In the Choose an action box, send an email is entered as the search term. From the Actions list, Office 365 Outlook (end an email (V2) item is selected.](media/logicapp-send-email.png 'Office 365 Outlook Actions list')
 
 16. Select **Sign in** and sign into your Office 365 Outlook account.
+    * Following are teh Username and password for office 365, this is same which you are using to login to Azure portal. You can get it from **Lab Environment Details** tab also.
+       * Username: <inject key="AzureAdUserEmail"></inject>
+       * Password: <inject key="AzureAdUserPassword"></inject>
 
     ![In the Office 365 Outlook - Send an email box, the Sign in button is selected.](media/image93.png 'Office 365 Outlook Sign in prompt')
 
