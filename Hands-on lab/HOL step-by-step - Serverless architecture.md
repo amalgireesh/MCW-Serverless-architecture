@@ -280,28 +280,28 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
     b. Select the Resource Group **ServerlessArchitecture**.
 
     c. Ensure the **Location** selected is set to the same region as your Resource Group.
+    
+     ![](media/eventgrid1.png)
 
-    d. Leave the schema as **Event Grid Schema**.
+    d. Click on **Next:Schema>**. Select the schema as **Event Grid Schema** and then click **Review + create**.
 
-   ![](media/eventgrid1.png)
+     ![](media/eventgrid2.png)
 
-5. Click on **Next:Schema>**. Select **Event Grid Schema** from dropdown and then click **Review + create**.
+5. Now select **Create**.
 
-6. Now select **Create**.
+6. After the Event Grid topic has completed provisioning, open the account by opening the **ServerlessArchitecture** resource group, and then selecting the **Event Grid** topic name.
 
-7. After the Event Grid topic has completed provisioning, open the account by opening the **ServerlessArchitecture** resource group, and then selecting the **Event Grid** topic name.
-
-8. Select **Overview** in the menu, and then copy the **Topic Endpoint** value.
+7. Select **Overview** in the menu, and then copy the **Topic Endpoint** value.
 
     ![In the TollBoothTopic blade, Overview is selected, and the copy button next to the Topic Endpoint is called out.](media/image21.png 'TollBoothTopic blade')
 
-9. Select **Access Keys** under Settings in the menu.
+8. Select **Access Keys** under Settings in the menu.
 
-10. Within the **Access Keys** blade, copy the **Key 1** value.
+9. Within the **Access Keys** blade, copy the **Key 1** value.
 
     ![In the TollBoothTopic blade, in the left menu under Settings, Access keys is selected. In the listing of Access keys, the copy button next to the Key 1 access key is selected.](media/image22.png 'TollBoothTopic - Access keys blade')
 
-11. Paste the values into a text editor, such as Notepad, for later reference.
+10. Paste the values into a text editor, such as Notepad, for later reference.
 
 ### Task 4: Provision the Azure Cosmos DB account
 
@@ -366,7 +366,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
     
     e. Throughput: **5000**
 
-   ![](media/needmanual.png)
+   ![](media/neemanual.png)
 
 11. Select **OK**.
 
