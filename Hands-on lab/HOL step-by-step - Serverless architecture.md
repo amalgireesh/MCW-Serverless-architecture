@@ -203,7 +203,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     f. **Region**: Select the region you are using for this lab, or the closest available one.
 
-    ![In the basics tab of the Create Function App blade, the form fields are set to the previously defined values.](media/new-functionapp-net-basics.png 'Function App Basics blade')
+   ![](media/funcapp1.png)
 
 5. Select **Next: Hosting >**.
 
@@ -283,23 +283,25 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     d. Leave the schema as **Event Grid Schema**.
 
-    ![In the Create Topic blade, the Name field is set to TollBoothTopic, and the Resource Group selected is ServerlessArchitecture.](media/new-eventgrid-topic.png 'Create Topic blade')
+   ![](media/eventgrid1.png)
 
-5. Select **Create**.
+5. Click on **Next:Schema>**. Select **Event Grid Schema** from dropdown and then click **Review + create**.
 
-6. After the Event Grid topic has completed provisioning, open the account by opening the **ServerlessArchitecture** resource group, and then selecting the **Event Grid** topic name.
+6. Now select **Create**.
 
-7. Select **Overview** in the menu, and then copy the **Topic Endpoint** value.
+7. After the Event Grid topic has completed provisioning, open the account by opening the **ServerlessArchitecture** resource group, and then selecting the **Event Grid** topic name.
+
+8. Select **Overview** in the menu, and then copy the **Topic Endpoint** value.
 
     ![In the TollBoothTopic blade, Overview is selected, and the copy button next to the Topic Endpoint is called out.](media/image21.png 'TollBoothTopic blade')
 
-8. Select **Access Keys** under Settings in the menu.
+9. Select **Access Keys** under Settings in the menu.
 
-9. Within the **Access Keys** blade, copy the **Key 1** value.
+10. Within the **Access Keys** blade, copy the **Key 1** value.
 
     ![In the TollBoothTopic blade, in the left menu under Settings, Access keys is selected. In the listing of Access keys, the copy button next to the Key 1 access key is selected.](media/image22.png 'TollBoothTopic - Access keys blade')
 
-10. Paste the values into a text editor, such as Notepad, for later reference.
+11. Paste the values into a text editor, such as Notepad, for later reference.
 
 ### Task 4: Provision the Azure Cosmos DB account
 
@@ -322,8 +324,9 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
     e. Ensure **Geo-redundancy** is disabled.
 
     f. Ensure **Multi-region writes** is disabled.
+ Let other configuration set on default.
 
-    ![Fields in the Azure Cosmos DB blade are set to the previously defined settings.](media/new-cosmosdb.png 'Azure Cosmos DB blade')
+   ![](media/cosmosdb1.png)
 
 4. Select **Review + create**, then select **Create**.
 
@@ -359,9 +362,11 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     c. Partition key: **/fileName**
 
-    d. Throughput: **5000**
+    d. Check the **Provision dedicated throughputfor this container** box.
+    
+    e. Throughput: **5000**
 
-    ![In the Add Container blade, fields are set to the previously defined values.](media/cosmosdb-add-manualreview-collection.png 'Add Collection blade')
+   ![](media/needmanual.png)
 
 11. Select **OK**.
 
@@ -369,7 +374,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
 13. Underneath the **Read-write Keys** tab within the Keys blade, copy the **URI** and **Primary Key** values.
 
-    ![In the tollbooth - Keys blade, under Settings, Keys is selected. On the Read-write Keys tab, the copy buttons for the URI and Primary Key fields are selected.](media/image28.png 'tollbooth - Keys blade')
+   ![](media/key.png)
 
 14. Paste the values into a text editor, such as Notepad, for later reference.
 
@@ -433,8 +438,8 @@ Azure Key Vault is used to securely store all secrets, such as database connecti
 
     e. **Pricing tier**: Select **Standard**.
 
-    ![In the Create key vault blade, fields are set to the previously defined values.](media/create-key-vault.png 'Create blade')
-
+   ![](media/keyvault.png)
+   
 5. Select **Review + create**, then select **Create**.
 
 6. After the deployment completes, select **Go to resource**.
