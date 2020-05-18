@@ -159,11 +159,11 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
 5. After the storage account has completed provisioning, open the storage account by selecting **Go to resource**.
 
-    ![In the Azure Portal, once the storage account has completed provisioning a status message is displayed saying Your deployment is complete. Beneath the next steps section The Go to resource button is highlighted.](media/storage-go-to-resource.png "Go to resource")
+   ![](media/sa17.png)
 
 6. On the **Storage account** blade, select **Access Keys**, under Settings in the menu. Then on the **Access keys** blade, select the **Click to copy** button for **key1 connection string.**
 
-    ![In the Storage account blade, under Settings, Access keys is selected. Under Default keys, the copy button next to the key1 connection string is selected.](media/image15.png 'Storage account blade')
+   ![](media/sa18.png)
 
 7. Paste the value into a text editor, such as Notepad, for later reference.
 
@@ -237,7 +237,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     f. **Region**: Select the region you are using for this lab, or the closest available one.
 
-    ![Fields in the Create Function App blade Basics tab are set to the previously defined values.](media/new-functionapp-nodejs-basics.png 'Function App Basics blade')
+   ![](media/sa19.png)
 
 11. Select **Next: Hosting >**.
 
@@ -289,13 +289,13 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
 7. Select **Overview** in the menu, and then copy the **Topic Endpoint** value.
 
-    ![In the TollBoothTopic blade, Overview is selected, and the copy button next to the Topic Endpoint is called out.](media/image21.png 'TollBoothTopic blade')
+   ![](media/sa20.png)
 
 8. Select **Access Keys** under Settings in the menu.
 
 9. Within the **Access Keys** blade, copy the **Key 1** value.
 
-    ![In the TollBoothTopic blade, in the left menu under Settings, Access keys is selected. In the listing of Access keys, the copy button next to the Key 1 access key is selected.](media/image22.png 'TollBoothTopic - Access keys blade')
+   ![](media/sa21.png)
 
 10. Paste the values into a text editor, such as Notepad, for later reference.
 
@@ -344,7 +344,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     e. Throughput: **5000**
 
-    ![In the Add Container blade, fields are set to the previously defined values.](media/cosmosdb-add-processed-collection.png 'Add Container blade')
+![](media/sa22.png)
 
 8. Select **OK**.
 
@@ -370,7 +370,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
 13. Underneath the **Read-write Keys** tab within the Keys blade, copy the **URI** and **Primary Key** values.
 
-   ![](media/key.png)
+   ![](media/sa23.png)
 
 14. Paste the values into a text editor, such as Notepad, for later reference.
 
@@ -402,10 +402,10 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
 6. Under Resource Management in the left-hand menu, select **Keys and Endpoint**.
 
-7. Within the **Keys and Endpoint** blade, copy the **ENDPOINT** value and **KEY 1** value.
+7. Within the **Keys and Endpoint** blade, click on **Show Keys** and copy the **KEY 1** value and **ENDPOINT** value.
 
-    ![In the Cognitive Services blade, under Resource Management, Keys and Endpoint is selected. The Copy button next to the Endpoint and Key 1 values are selected.](media/copy-computer-vision-key.png 'Keys and Endpoint information')
-
+   ![](media/sa24.png)
+   
 8. Paste the values into a text editor, such as Notepad, for later reference.
 
 ### Task 6: Provision Azure Key Vault
@@ -432,19 +432,19 @@ Azure Key Vault is used to securely store all secrets, such as database connecti
 
     e. **Pricing tier**: Select **Standard**.
 
-   ![](media/sa6.png)
+   ![](media/sa25.png)
    
 5. Select **Review + create**, then select **Create**.
 
 6. After the deployment completes, select **Go to resource**.
 
-    ![When the deployment completes, a message is displayed indicating Your deployment is complete. The Go to resource button is highlighted in the next steps section.](media/key-vault-deployment-complete.png "Your deployment is complete")
+   ![](media/sa26.png)
 
 7. Select **Secrets** under Settings in the left-hand menu.
 
 8. Select **Generate/Import** to add a new key.
 
-    ![The Secrets menu item and the Generate/Import button are highlighted.](media/generate-secret.png "Key Vault - Secrets")
+   ![](media/sa27.png)
 
 9. Use the table below for the Name / Value pairs to use when creating the secrets. You only need to populate the **Name** and **Value** fields for each secret, and can leave the other fields at their default values.
 
@@ -516,11 +516,11 @@ In this task, you will apply application settings using the Microsoft Azure Port
 
    ![](media/sa9.png)
 
-3. Select **Configuration** on the Overview pane.
+3. Select **Configuration** under the **Settings** pane and click on **Application settings** section. 
 
-    ![In the TollBoothFunctionApp blade on the Overview tab, under Configured features, the Configuration item is selected.](media/image34.png 'TollBoothFunctionApp blade')
+   ![](media/sa28.png)
 
-4. Scroll to the **Application settings** section. Use the **+ New application setting** link to create the following additional Key/Value pairs (the key names must exactly match those found in the table below). **Be sure to remove the curly braces (`{}`)**.
+4. Use the **+ New application setting** link to create the following additional Key/Value pairs (the key names must exactly match those found in the table below). **Be sure to remove the curly braces (`{}`)**.
 
     |                          |                                                                                                                                                             |
     | ------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -656,7 +656,7 @@ In this task, you will publish the Function App from the starter project in Visu
 
 5. Whatever you named the Function App when you provisioned it is fine. Just make sure it is the same one to which you applied the Application Settings in Task 1 of this exercise.
 
-    ![In the App Service form, Resource Group displays in the View field, and in the tree-view below, the ServerlessArchitecture folder is expanded, and TollBoothFunctionApp is selected.](media/image41.png 'App Service form')
+   ![](media/sa29.png)
 
 6. After you select the Function App, select **OK**.
 
@@ -720,31 +720,17 @@ In this task, you will create a new Node.js function triggered by Event Grid and
 
 3. In the blade menu, select **Functions**, the select **+ New Function**.
 
-    ![In the Function Apps blade, the TollBoothEvents2 application is selected. In the Overview tab, the + New function button is selected.](media/function-app-events-overview.png 'TollBoothEvents2 blade')
+   ![](media/sa30.png)
 
-4. Select **In-portal** within the _Choose a development environment_ step, then select **Continue**.
+4. Enter **event grid** into the template search form, then select the **Azure Event Grid trigger** template.
 
-    ![In the Quickstart tab, the In-portal tile is highlighted and the Continue button is selected.](media/new-function-in-portal.png "Azure Functions for JavaScript blade")
+   ![](media/sa31.png)
 
-5. Select **More templates...** within the _Create a function_ step, then select **Finish and view templates**.
+5. In the _New Function_ form, enter **SavePlateData** for the **Name**, then select **Create**.
 
-    ![In the Quickstart tab, The More templates tile and the Finish and view templates button are highlighted.](media/new-function-more-templates.png "Azure Functions for JavaScript blade")
+   ![](media/sa32.png)
 
-6. Enter **event grid** into the template search form, then select the **Azure Event Grid trigger** template.
-
-    ![In the Template search form, event grid is typed in the search field. Below, the Event Grid trigger tile is highlighted.](media/new-function-event-grid-trigger-template.png "Template search form")
-
-    a. If prompted to install the Azure Event Grid trigger extension, select **Install** and wait for the extension to install.
-
-    ![The Extensions not Installed message is displayed with an install and close button.](media/install-function-extension.png 'Template search form')
-
-    b. Select **Continue**.
-
-7. In the _New Function_ form, enter `SavePlateData` for the **Name**, then select **Create**.
-
-    ![In the New Function form, SavePlateData is entered in the Name field and the Create button is highlighted.](media/new-function-saveplatedata.png "New Function form")
-
-8. Replace the code in the new SavePlateData function with the following:
+6. Replace the code in the new SavePlateData function with the following:
 
     ```javascript
     module.exports = function(context, eventGridEvent) {
@@ -762,7 +748,7 @@ In this task, you will create a new Node.js function triggered by Event Grid and
     };
     ```
 
-9. Select **Save**.
+7. Select **Save**.
 
 ### Task 2: Add an Event Grid subscription to the SavePlateData function
 
@@ -798,9 +784,11 @@ In this task, you will add an Event Grid subscription to the SavePlateData funct
 
 In this task, you will add an Azure Cosmos DB output binding to the SavePlateData function, enabling it to save its data to the Processed collection.
 
-1. Expand the **SavePlateData** function in the left-hand tree-view, then select **Integrate**.
+1. Select the QueuePlateForManualCheckup function, then select **Integration** under **Developer** pane and click on **+Add Output**.
 
-2. Under Outputs, select **+ New Output**, select **Azure Cosmos DB** from the list of outputs, then choose **Select**.
+   ![](media/sa35.png)
+
+2. Select **Azure Cosmos DB** from the list of outputs, then choose **Select**.
 
     ![In the Function App blade, in the left hand tree-view, the TollBoothEvents2, Functions, and SavePlateData items are expanded, with the Integrate item selected. In the right pane, + New Output is selected under Outputs. In the list of outputs, the Azure Cosmos DB tile is selected.](media/image48.png 'SavePlateData blade')
 
@@ -830,27 +818,23 @@ In this task, you will add an Azure Cosmos DB output binding to the SavePlateDat
 
 In this task, you will create a new function triggered by Event Grid and outputs information about photos that need to be manually verified to Azure Cosmos DB.
 
-1. Select the **+** button to the right of **Functions** in the left-hand menu to create a new function.
+1. Open the **ServerlessArchitecture** resource group, then select the Azure Function App you created whose name ends with **Events**. If you did not use this naming convention, make sure you select the Function App that you _did not_ deploy to in the previous exercise.
 
-    ![In the left-hand menu next to the Functions item, the + button is highlighted along with its tooltip Create new displaying.](media/new-function-button.png "Create new function")
+2. In the blade menu, select **Functions**, the select **+ New Function**.
 
-2. Enter **event grid** into the template search form, then select the **Azure Event Grid trigger** template.
+   ![](media/sa30.png)
 
-    a. If prompted, select **Install** and wait for the extension to install.
+3. Enter **event grid** into the template search form, then select the **Azure Event Grid trigger** template.
 
-    b. Select **Continue**.
+   ![](media/sa31.png)
 
-    ![Event grid is entered into the search field, and in the results, Azure Event Grid trigger tile displays.](media/image44.png 'Event grid trigger')
+4. In the _New Function_ form, enter **QueuePlateForManualCheckup** for the **Name**, then select **Create**.
 
-3. In the **New Function** form, fill out the following properties:
+   ![](media/sa33.png)
 
-    a. For name, type **QueuePlateForManualCheckup**
+5. Select **Create**.
 
-    ![In the Azure Event Grid trigger form, QueuePlateForManualCheckup is typed in the Name field along with a Create and Cancel button.](media/image51.png 'Event Grid trigger, New Function form')
-
-4. Select **Create**.
-
-5. Replace the code in the new QueuePlateForManualCheckup function with the following:
+6. Replace the code in the new QueuePlateForManualCheckup function with the following:
 
     ```javascript
     module.exports = async function(context, eventGridEvent) {
@@ -868,7 +852,7 @@ In this task, you will create a new function triggered by Event Grid and outputs
     };
     ```
 
-6. Select **Save**.
+7. Select **Save**.
 
 ### Task 5: Add an Event Grid subscription to the QueuePlateForManualCheckup function
 
@@ -904,9 +888,11 @@ In this task, you will add an Event Grid subscription to the QueuePlateForManual
 
 In this task, you will add an Azure Cosmos DB output binding to the QueuePlateForManualCheckup function, enabling it to save its data to the NeedsManualReview collection.
 
-1. Expand the QueuePlateForManualCheckup function in the left-hand menu, the select **Integrate**.
+1. Select the QueuePlateForManualCheckup function, then select **Integration** under **Developer** pane and click on **+Add Output**.
 
-2. Under Outputs, select **+ New Output** then select **Azure Cosmos DB** from the list of outputs, then choose **Select**.
+   ![](media/sa34.png)
+
+2. Select **+ New Output** then select **Azure Cosmos DB** from the list of outputs, then choose **Select**.
 
     ![In the Function Apps blade left-hand tree-view, the TollBoothEvents2, Functions, and QueuePlateForManualCheckup items are expanded. Beneath the QueuePlateForManualCheckup item the Integrate item is selected. In the right pane, + New Output is selected under Outputs. In the list of outputs, the Azure Cosmos DB tile is selected.](media/image54.png)
 
@@ -1046,7 +1032,7 @@ In this task, you will change the Computer Vision API to the Free tier. This wil
 
     > **Note**: If you already have an **F0** free pricing tier instance, you will not be able to create another one.
 
-    ![In the Cognitive Services blade, under Resource Management, the Pricing tier item is selected. In the Choose your pricing tier blade, the F0 Free option is selected.](media/image73.png 'Choose your pricing tier blade')
+![](media/sa36.png)
 
 3. Switch to Visual Studio, debug the **UploadImages** project again, then enter **2** and press **ENTER**. This will upload 1,000 new photos.
 
@@ -1216,7 +1202,7 @@ In this exercise, you create a new Logic App for your data export workflow. This
 
 21. The Logic App will continue to run in the background, executing every 15 minutes (or whichever interval you set) until you disable it. To disable the app, go to the **Overview** blade for the Logic App and select the **Disable** button on the taskbar.
 
-    ![The Disable button is selected on the TollBoothLogic Logic app blade toolbar menu.](media/image97.png 'TollBoothLogic blade')
+![](media/sa37.png)
 
 ## Exercise 7: Configure continuous deployment for your Function App
 
@@ -1272,13 +1258,13 @@ In this exercise, configure your Function App that contains the ProcessImage fun
 
 1. Open the Azure Function App you created whose name ends with **FunctionApp**, or the name you specified for the Function App containing the ProcessImage function.
 
-2. Select **Container settings** underneath the **Platform features** tab.
+2. Select **Deployment Center** underneath the **Deployment** pane, then select **GitHub**.
 
-    ![The Platform features tab is displayed, under Code Deployment, Container settings is selected.](media/functionapp-container-settings-link.png 'TollBoothFunctionApp blade')
+![](media/sa38.png)
 
-3. Select **GitHub** in the **Deployment Center** blade. Enter your GitHub credentials if prompted. Select **Continue**.
+3.  Click on **Authorize**, a popup window will appear. Enter your GitHub credentials and then select **Continue**.
 
-    ![The GitHub tile is selected from a list of repository options.](media/functionapp-dc-github.png 'Deployment Center blade')
+![](media/sa39.png)
 
 4. Select **App Service build service**, then select **Continue**.
 
@@ -1368,11 +1354,11 @@ With the latest code changes in place, run your Logic App and verify that the fi
 
 2. From the **Overview** blade, select **Enable**.
 
-    ![In the TollBoothLogic Logic app blade, Overview is selected in the left menu, and the Enable enable button is selected in the right pane.](media/image113.png 'TollBoothLogic blade')
+![](media/sa40.png)
 
 3. Now select **Run Trigger**, then select **Recurrence** to immediately execute your workflow.
 
-    ![In the TollBoothLogic Logic app blade, Run Trigger and Recurrence are selected.](media/image114.png 'TollBoothLogic blade')
+![](media/sa41.png)
 
 4. Select the **Refresh** button next to the Run Trigger button to refresh your run history. Select the latest run history item. If the expression result for the condition is **true**, then that means the CSV file should've been exported to Blob storage. Be sure to disable the Logic App so it doesn't keep sending you emails every 15 minutes. Please note that it may take longer than expected to start running, in some cases.
 
