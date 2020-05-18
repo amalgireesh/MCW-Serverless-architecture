@@ -784,7 +784,7 @@ In this task, you will add an Event Grid subscription to the SavePlateData funct
 
 In this task, you will add an Azure Cosmos DB output binding to the SavePlateData function, enabling it to save its data to the Processed collection.
 
-1. Select the QueuePlateForManualCheckup function, then select **Integration** under **Developer** pane and click on **+Add Output**.
+1. Select the SavePlateData function, then select **Integration** under **Developer** pane and click on **+Add Output**.
 
    ![](media/sa35.png)
 
@@ -826,7 +826,7 @@ In this task, you will create a new function triggered by Event Grid and outputs
 
 3. Enter **event grid** into the template search form, then select the **Azure Event Grid trigger** template.
 
-   ![](media/sa31.png)
+   ![](media/sa41.png)
 
 4. In the _New Function_ form, enter **QueuePlateForManualCheckup** for the **Name**, then select **Create**.
 
