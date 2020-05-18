@@ -724,7 +724,7 @@ In this task, you will create a new Node.js function triggered by Event Grid and
 
 4. Enter **event grid** into the template search form, then select the **Azure Event Grid trigger** template.
 
-   ![](media/sa31.png)
+   ![](media/sa41.png)
 
 5. In the _New Function_ form, enter **SavePlateData** for the **Name**, then select **Create**.
 
