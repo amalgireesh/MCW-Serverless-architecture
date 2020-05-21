@@ -139,7 +139,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     a. For **Resource group**, select the **Use existing** radio button, and select the **ServerlessArchitecture** resource group.
 
-    b. **Name**: Enter a unique value for the storage account name, include **DeploymentID/DID** as suffix in storage account name to make it unique, such as **tollboothstorage-DID** where DID is unique ID present in your Azure username. For example: Username - <inject key="AzureAdUserEmail"></inject>, here six digit number is the **DeploymentID**. 
+    b. **Name**: Enter a unique value for the storage account name, include **DeploymentID/DID** as suffix in storage account name to make it unique, such as **tollboothstorageDID** where DID is unique ID present in your Azure username. For example: Username - <inject key="AzureAdUserEmail"></inject>, here six digit number is the **DeploymentID**. 
     
     **Note:** All characters of the Name must be in lower case; ensure the green check mark appears.
 
@@ -551,13 +551,13 @@ In this task, you will apply application settings using the Microsoft Azure Port
 
 In order for your Function App to be able to access Key Vault to read the secrets, you must [create a system-assigned managed identity](https://docs.microsoft.com/azure/app-service/overview-managed-identity#adding-a-system-assigned-identity) for the Function App, and [create an access policy in Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-secure-your-key-vault#key-vault-access-policies) for the application identity.
 
-1. Open the Azure Function App you created whose name ends with **FunctionApp** and navigate to **Platform features**.
+1. Open the Azure Function App you created whose name ends with **FunctionApp**.
 
-2. Select **Identity**.
+2. Under **Settings** pane select **Identity**.
 
 3. Within the **System assigned** tab, switch **Status** to **On**. Select **Save**.
 
-    ![In the Identity blade, the System assigned tab is selected with the Status set to On and the Save button is highlighted.](media/function-app-identity.png "Identity")
+   ![](media12sa.png)
 
 ### Task 3: Add Function App to Key Vault access policy
 
@@ -575,7 +575,7 @@ Perform these steps to create an access policy that enables the "Get" secret per
 
     ![In the Add access policy form, the Select principal field is highlighted.](media/key-vault-add-access-policy-select-principal.png "Add access policy")
 
-5. In the Principal blade, search for your TollBoothFunctionApp Function App's service principal, select it, then select the **Select** button.
+5. In the Principal blade, search for your TollBoothFunctionApp Function App's service principal. Enter **TollBooth** in the search box and select it, then click on the **Select** button.
 
    ![](media/sa10.png)
 
@@ -673,9 +673,9 @@ In this task, you will publish the Function App from the starter project in Visu
 
 9. Open the **ServerlessArchitecture** resource group, then select the Azure Function App to which you just published.
 
-10. Expand the functions underneath your Function App in the menu. You should see both functions you just published from the Visual Studio solution listed.
+10. Then under **Functions** pane select **Functions**. You should see both functions you just published from the Visual Studio solution listed. 
 
-    ![In the Function Apps blade, in the left tree-view both TollBoothFunctionApp, and Functions (Read Only) are expanded. Beneath Functions (Read Only), two functions ExportLicensePlates and ProcessImage are highlighted.](media/image42.png 'TollBoothFunctionApp blade')
+    ![](media/13sa.png)
 
 11. Now we need to add an Event Grid subscription to the ProcessImage function, so the function is triggered when new images are added to blob storage. Select the **ProcessImage** function, then select **Add Event Grid subscription**.
 
