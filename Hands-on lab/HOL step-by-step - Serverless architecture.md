@@ -695,12 +695,25 @@ In this task, you will publish the Function App from the starter project in Visu
 
     f. Select only the **Blob Created** from the event types dropdown list.
 
-    g. Leave Azure Function as the Endpoint Type.
+    g. Endpoint Type: Leave Azure Function as the endpoint type.
+    
+    h. Endpoint: Click on **select endpoint**. 
+    
+    i. Now **Select Azure Function** window will appear, add following configurations there:
+       - Select your subscription from the dropdown.
+       - Select you Resource Group **serverless-architecture-DID** from the dropdown.
+       - Function App: Select **TollBoothFunctionApp-DID** from the dropdown.
+       - Slot: **Production**
+       - Function: Select **ProcessImage** from the dropdown.
 
-13. Leave the remaining fields at their default values and select **Create**.
+Then select **Confirm Selection**.
+   
+   ![](media/14sa.png)
+    
+13. Review all the values and select **Create**.
 
-    ![In the Create event subscription form, the fields are set to the previously defined values.](media/processimage-eg-sub.png)
-
+   ![](media/17sa.png)
+   
 ## Exercise 3: Create functions in the portal
 
 **Duration**: 45 minutes
@@ -779,25 +792,40 @@ In this task, you will add an Event Grid subscription to the SavePlateData funct
 
     g. Enter `savePlateData` for the new event type value. This will ensure this function is only triggered by this Event Grid type.
 
-    h. Leave Azure Function as the Endpoint Type.
+     h. Endpoint: Click on **select endpoint**. 
+    
+    i. Now **Select Azure Function** window will appear, add following configurations there:
+       - Select your subscription from the dropdown.
+       - Select you Resource Group **serverless-architecture-DID** from the dropdown.
+       - Function App: Select **TollBoothEvents-DID** from the dropdown.
+       - Slot: **Production**
+       - Function: Select **SavePlateData** from the dropdown.
 
-3. Leave the remaining fields at their default values and select **Create**.
+Then select **Confirm Selection**.
+   
+   ![](media/15sa.png)
+    
+13. Review all the values and select **Create**.
 
-    ![In the Create Event Subscription blade, fields are set to the previously defined values.](media/saveplatedata-eg-sub.png "Create Event Subscription")
+   ![](media/16sa.png)
 
 ### Task 3: Add an Azure Cosmos DB output to the SavePlateData function
 
 In this task, you will add an Azure Cosmos DB output binding to the SavePlateData function, enabling it to save its data to the Processed collection.
 
-1. Select the SavePlateData function, then select **Integration** under **Developer** pane and click on **+Add Output**.
+1. Go to the function app whose name ends with **Events**. Then click on Functiones and select the **SavePlateData** function. 
+  
+  ![](media/18sa.png)
+   
+2. Now click on **Integration** under **Developer** pane and click on **+Add Output**.
 
-   ![](media/sa35.png)
+  ![](media/sa35.png)
 
-2. Select **Azure Cosmos DB** from the list of outputs, then choose **Select**.
+3. Select **Azure Cosmos DB** from the list of outputs, then choose **Select**.
 
     ![In the Function App blade, in the left hand tree-view, the TollBoothEvents2, Functions, and SavePlateData items are expanded, with the Integrate item selected. In the right pane, + New Output is selected under Outputs. In the list of outputs, the Azure Cosmos DB tile is selected.](media/image48.png 'SavePlateData blade')
 
-3. In the Azure Cosmos DB output form, select **new** next to the Azure Cosmos DB account connection field.
+4. In the Azure Cosmos DB output form, select **new** next to the Azure Cosmos DB account connection field.
 
     ![The new button is selected next to the Azure Cosmos DB account connection field.](media/image49.png 'New button')
 
@@ -805,7 +833,7 @@ In this task, you will add an Azure Cosmos DB output binding to the SavePlateDat
 
     ![A message is displayed indicating the Cosmos DB Extensions are not installed. The Install link is selected.](media/cosmos-extension-install.png 'Cosmos DB Extensions not installed')
 
-4. Select your Cosmos DB account from the list that appears.
+5. Select your Cosmos DB account from the list that appears.
 
 5. Specify the following configuration options in the Azure Cosmos DB output form:
 
