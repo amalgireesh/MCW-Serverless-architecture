@@ -199,19 +199,21 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     f. **Region**: Select the region you are using for this lab, or the closest available one.
 
-   ![](media/sa3.png)
+   ![](media/1sa.png)
 
 5. Select **Next: Hosting >**.
 
 6. Within the **Hosting** blade, specify the following configuration options:
 
-    a. **Storage account**: Leave this option as **create new**.
+    a. **Storage account**: Click on **create new** and enter name as **storageaccountappDID**.
+    
+     ![](media/6sa.png)
 
     b. **Operating system**: Select **Windows**.
 
     c. **Plan type**: Select **Consumption**.
 
-    ![In the Hosting tab of the Create Function App blade, the form fields are set to the previously defined values.](media/new-functionapp-net-hosting.png "Function App Hosting blade")
+   ![](media/2sa.png)
 
 7. Select **Next: Monitoring >**.
 
@@ -237,19 +239,21 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     f. **Region**: Select the region you are using for this lab, or the closest available one.
 
-   ![](media/sa19.png)
+   ![](media/7sa.png)
 
 11. Select **Next: Hosting >**.
 
 12. Within the **Hosting** blade, specify the following configuration options:
 
-    a. **Storage account**: Leave this option as **create new**.
+    a. **Storage account**:  Click on **create new** and enter name as **storageaccounteveDID**.
+    
+    ![](media/9sa.png)
 
     b. **Operating system**: Select **Windows**.
 
     c. **Plan type**: Select **Consumption**.
 
-    ![Fields in the Create Function App blade Hosting tab are set to the previously defined values.](media/new-functionapp-net-hosting.png "Function App Hosting blade")
+    ![](media/8sa.png)
 
 13. Select **Next: Monitoring >**.
 
@@ -277,11 +281,11 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     c. Ensure the **Location** selected is set to the same region as your Resource Group.
     
-   ![](media/sa5.png)
+   ![](media/3sa.png)
 
-    d. Click on **Next:Schema**. Select the schema as **Event Grid Schema** and then click **Review + create**.
+    d. Click on **Next:Advanced**. Select the event schema as **Event Grid Schema** and then click **Review + create**.
 
-     ![](media/eventgrid2.png)
+     ![](media/4sa.png)
 
 5. Now select **Create**.
 
@@ -317,12 +321,13 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
 
     d. Select the same **Location** as your Resource Group if available. Otherwise, select the next closest **region**.
 
-    e. Ensure **Geo-redundancy** is disabled.
+    e. Apply free tier discount: Set it to **Do Not Apply**.
 
-    f. Ensure **Multi-region writes** is disabled.
- Let other configuration set on default.
+    f. Ensure **Geo-redundancy** and **Multi-region writes** are disabled.
 
-   ![](media/sa4.png)
+Leave other configurations set on default.
+
+   ![](media/5sa.png)
 
 4. Select **Review + create**, then select **Create**.
 
@@ -396,7 +401,7 @@ In this exercise, you will provision a blob storage account using the Hot tier, 
     
     e. Select **Create**.
 
-   ![](media/sa6.png)
+   ![](media/10sa.png)
 
 5. After the Computer Vision API has completed provisioning, open the service by opening the **ServerlessArchitecture** resource group, and then selecting the **Computer Vision** **API** service name.
 
@@ -432,7 +437,7 @@ Azure Key Vault is used to securely store all secrets, such as database connecti
 
     e. **Pricing tier**: Select **Standard**.
 
-   ![](media/sa25.png)
+   ![](media/11sa.png)
    
 5. Select **Review + create**, then select **Create**.
 
