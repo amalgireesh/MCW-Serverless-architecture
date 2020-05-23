@@ -979,7 +979,7 @@ Application Insights can be integrated with Azure Function Apps to provide robus
 
     c. Select the same **Location** as your Resource Group region.
 
-   ![](media/sa13.png)
+   ![](media/26sa.png)
 
 5. Select **Review + Create**, then choose **Create**.
 
@@ -1168,7 +1168,7 @@ In this exercise, you create a new Logic App for your data export workflow. This
 
     d. Select **Off** underneath Log Analytics.
 
-   ![](media/sa16.png)
+   ![](media/27sa.png)
 
 5. Select **Review + create**, then select **Create**. Open the Logic App once it has been provisioned.
 
@@ -1241,7 +1241,7 @@ In this exercise, you create a new Logic App for your data export workflow. This
 
 21. The Logic App will continue to run in the background, executing every 15 minutes (or whichever interval you set) until you disable it. To disable the app, go to the **Overview** blade for the Logic App and select the **Disable** button on the taskbar.
 
-![](media/sa37.png)
+![](media/28sa.png)
 
 ## Exercise 7: Configure continuous deployment for your Function App
 
@@ -1393,7 +1393,7 @@ With the latest code changes in place, run your Logic App and verify that the fi
 
 2. From the **Overview** blade, select **Enable**.
 
-![](media/sa40.png)
+![](media/29sa.png)
 
 3. Now select **Run Trigger**, then select **Recurrence** to immediately execute your workflow.
 
