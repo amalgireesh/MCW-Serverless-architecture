@@ -595,6 +595,9 @@ There are a few components within the starter project that must be completed, ma
 
 > **Note:** Do **NOT** update the version of any NuGet package. This solution is built to function with the NuGet package versions currently defined within. Updating these packages to newer versions could cause unexpected results.
 
+1. From the portal click on **Visual Studio** and then click on **Sign in** button from the dialog box and then enter the Username **<inject key="AzureAdUserEmail" />** and Password **<inject key="AzureAdUserPassword" />** to sign-in to the Visual Studio and then click on **Start Visual Studio** button on the bottom right of the dialog box.
+
+
 1. Navigate to the **TollBooth** project (`C:\ServerlessMCW\MCW-Serverless-architecture-master\hands-on-lab\starter\TollBooth\TollBooth.sln`) using the Solution Explorer of Visual Studio.
 
 2. From the Visual Studio **View** menu, select **Task List**.
